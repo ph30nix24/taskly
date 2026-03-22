@@ -19,9 +19,11 @@ export const registerController = async ({ name, email, password }) => {
 
 export const loginController = async ({ email, password }) => {
     try {
+        console.log(`${API_URL}/login`);
         const response = await axios.post(`${API_URL}/login`, { email, password }, {
             withCredentials: true
         });
+        
         console.log(response.data.message);
         return response.data;
     } catch (error) {

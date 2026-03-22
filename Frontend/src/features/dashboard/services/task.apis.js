@@ -1,6 +1,7 @@
 import axios from "axios";
+const API = import.meta.env.VITE_API_URL;
 
-const API_URL = "http://localhost:3000/taskly/tasks";
+const API_URL = `${API}/taskly/tasks`;
 
 export const createTaskApi = async({title, description, priority, dueDate }) => {
     console.log(title, description, priority, dueDate);

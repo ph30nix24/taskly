@@ -1,8 +1,8 @@
 import axios from 'axios';
 const API = import.meta.env.VITE_API_URL;
 
-const API_URL = `${API}/taskly/auth`;
-const USER_URL = `${API}/taskly/users`;
+const API_URL = `${API}taskly/auth`;
+const USER_URL = `${API}taskly/users`;
 
 export const registerController = async ({ name, email, password }) => {
     try {
@@ -19,7 +19,6 @@ export const registerController = async ({ name, email, password }) => {
 
 export const loginController = async ({ email, password }) => {
     try {
-        console.log(`${API_URL}/login`);
         const response = await axios.post(`${API_URL}/login`, { email, password }, {
             withCredentials: true
         });

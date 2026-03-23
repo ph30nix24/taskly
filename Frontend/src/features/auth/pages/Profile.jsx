@@ -79,22 +79,22 @@ const Profile = () => {
       <div className="w-full lg:w-250 mx-auto flex px-5 lg:px-10 py-5 gap-3 lg:gap-10 items-center shadow-bg rounded-xl  relative bg-linear-to-tl from-[#ecebf9] to-[#FFFFFF] z-20">
         <img
           src="./imgs/drop2.png"
-          className="absolute size-5 object-contain top-10 left-20 translate-x-[200%] opacity-40 z-30"
+          className="absolute size-5 object-contain top-10 left-20 translate-x-[200%] opacity-40 z-30 hidden lg:block"
           alt=""
         />
         <img
           src="./imgs/drop1.png"
-          className="absolute size-12 object-contain top-8 right-35 translate-x-[200%] opacity-20 z-30"
+          className="absolute size-12 object-contain top-8 right-35 translate-x-[200%] opacity-20 z-30 hidden lg:block"
           alt=""
         />
         <img
           src="./imgs/drop2.png"
-          className="absolute size-8 object-contain top-15 right-20 translate-x-[200%] opacity-20 z-30"
+          className="absolute size-8 object-contain top-15 right-20 translate-x-[200%] opacity-20 z-30 hidden lg:block"
           alt=""
         />
         <img
           src="./imgs/drop2.png"
-          className="absolute size-8 object-contain top-0 right-20 translate-x-[200%] opacity-20 z-20"
+          className="absolute size-8 object-contain top-0 right-20 translate-x-[200%] opacity-20 z-20 hidden lg:block"
           alt=""
         />
 

@@ -46,7 +46,7 @@ export const logoutController = async () => {
 
 export const getCurrentUserController = async () => {
     try {
-        const response = await axios.get(`http://localhost:3000/taskly/users/get-me`, {
+        const response = await axios.get(`${USER_URL}/taskly/users/get-me`, {
             withCredentials: true
         });
         return response.data;
